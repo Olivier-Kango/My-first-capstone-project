@@ -1,0 +1,224 @@
+* {
+  font-family: 'Lato', sans-serif;
+}
+
+/* HAMBURGER */
+.container_menu {
+  display: block;
+  cursor: pointer;
+  width: auto;
+  width: fit-content;
+  height: fit-content;
+}
+
+.change .container_menu {
+  position: fixed;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #616161c6;
+  margin: 6px 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.change sup {
+  z-index: -1;
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+  color: white;
+}
+
+.change .bar2 {
+  opacity: 0;
+}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+  color: white;
+}
+
+.menu {
+  display: flex;
+  position: fixed;
+  align-items: flex-start;
+  padding: 30% 10%;
+  top: -5%;
+  height: 110vh;
+  width: 100%;
+  left: -120%;
+  transition: 0.3s;
+  background: #282b32;
+}
+
+.menu ul {
+  display: flex;
+  gap: 45px;
+  margin: 0;
+  padding: 0;
+  flex-direction: column;
+  align-items: flex-start;
+  z-index: 1;
+  transition: 0.3s;
+}
+
+.menu.change {
+  left: 0;
+}
+
+.nav-item:nth-child(n) {
+  font-weight: bold;
+  color: #ec5242;
+  list-style: none;
+}
+
+.nav-link {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+  transition: 0.7s ease;
+}
+
+/* HOME PAGE */
+.home {
+  background-image: url("./images/photo-1485627941502-d2e6429a8af0.avif");
+  overflow: hidden;
+  height: fit-content;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+  transition: 0.5s;
+  z-index: -2; 
+}
+
+.div-home {
+  height: 100%;
+  width: 100%;
+  background: #d2d2d21d;
+  padding: 15px 20px 50px 20px;
+}
+
+.description-title {
+  font-size: 18px;
+  color: #ec5242;
+  margin: 50px 0 4px 0;
+}
+
+.main-title {
+  font-family: 'COCOGOOSE', sans-serif;             
+  font-size:1.9rem;
+  font-weight: bold;
+  color: #ec5242;
+  margin: 2% 0;
+}
+
+.home-content {
+  border: 4px solid white;
+  padding: 4%;
+  background: #eceff0af;
+  margin: 15px 0;
+}
+
+.date {
+  font-size: 1.5rem;
+  font-weight: 900;
+  margin: 4% 0;
+  color: #616161;
+}
+
+.main-program {
+  background-image: url("/images/black-brick-bd.jfif");
+  overflow: hidden;
+  display: flex;
+  height: fit-content;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+  transition: 0.5s;
+  z-index: -2;
+}
+
+.div-main-program {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background: #282b32cc;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.main-program h2 {
+  padding-top: 30px;
+  text-align: center;
+  color: white;
+}
+
+.underline {
+  display: block;
+  margin: 15px auto 30px auto;
+  background: #ec5242;
+  width: 70px;
+  height: 3px;
+}
+
+.program {
+  display: grid;
+  grid-template-columns: 12% 26% 50%;
+  align-content: center;
+  justify-content: center;
+  gap: 15px;
+  padding: 15px;
+  background: #eceff01a;
+  height: 90px;
+  margin: 0 auto;
+  width: 90%;
+}
+
+.program i {
+  color: white;
+  font-size: 40px;
+  align-self: center;
+  margin: 0;
+}
+
+.program h3 {
+  color: #ec5242;
+  font-size: 14px;
+  font-weight: bold;
+  height:fit-content;
+  align-self: center; 
+  margin: 0;
+}
+
+.program p {
+  color: white;
+  font-size: small;  
+  margin: auto 0;
+  height: fit-content;
+}
+
+.div-main-program button {
+  display: block;
+  color: white;
+  background: #ec5242;
+  padding: 20px 40px;
+  width: fit-content;
+  margin: 35px auto 50px auto;
+  cursor: pointer;
+}
+
+/* Desktop */
+ @media (min-width:768px) {
+
+}
