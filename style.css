@@ -8,7 +8,6 @@
   cursor: pointer;
   width: auto;
   width: fit-content;
-  height: fit-content;
 }
 
 .change .container_menu {
@@ -87,25 +86,23 @@
 .home {
   background-image: url("./images/photo-1485627941502-d2e6429a8af0.avif");
   overflow: hidden;
-  height: fit-content;
   margin: 0;
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100% 100%;
   transition: 0.5s;
-  z-index: -2; 
+  z-index: -2;
 }
 
 .about {
   background-image: url("./images/photo-1481026469463-66327c86e544.avif");
   overflow: hidden;
-  height: fit-content;
   margin: 0;
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100% 100%;
   transition: 0.5s;
-  z-index: -2; 
+  z-index: -2;
 }
 
 .div-home {
@@ -136,8 +133,8 @@
 }
 
 .main-title {
-  font-family: 'COCOGOOSE', sans-serif;             
-  font-size:1.9rem;
+  font-family: 'COCOGOOSE', sans-serif;
+  font-size: 1.9rem;
   font-weight: bold;
   color: #ec5242;
   margin: 2% 0;
@@ -182,7 +179,6 @@
   background-image: url("/images/black-brick-bd.jfif");
   overflow: hidden;
   display: flex;
-  height: fit-content;
   margin: 0;
   background-repeat: no-repeat;
   background-position: center;
@@ -202,7 +198,6 @@
 }
 
 .about-program {
-  height: fit-content;
   padding: 0 20px 0 20px;
   margin: 0;
   z-index: -2;
@@ -235,6 +230,15 @@
   background: #ec5242;
   width: 70px;
   height: 3px;
+}
+
+footer img {
+  width: 40%;
+}
+
+footer p {
+  color: #414246;
+  font-size: small;
 }
 
 .about-program img {
@@ -275,16 +279,14 @@
   color: #ec5242;
   font-size: 14px;
   font-weight: bold;
-  height:fit-content;
-  align-self: center; 
+  align-self: center;
   margin: 0;
 }
 
 .program p {
   color: white;
-  font-size: small;  
+  font-size: small;
   margin: auto 0;
-  height: fit-content;
 }
 
 .div-main-program button {
@@ -315,7 +317,6 @@
 
 .past-1 {
   position: relative;
-  background-image: url;
   padding: 0;
   border: none;
 }
@@ -356,7 +357,7 @@
   margin: 30px;
   color: #909090;
   text-align: center;
-  font-family: 'COCOGOOSE';
+  font-family: 'COCOGOOSE', sans-serif;
   font-weight: bold;
 }
 
@@ -366,18 +367,4 @@ footer {
   align-items: center;
   gap: 20px;
   padding: 25px 40px;
-}
-
-footer img {
-  width: 40%;
-}
-
-footer p {
-  color: #414246;
-  font-size: small;
-}
-
-/* Desktop */
- @media (min-width:768px) {
-
 }
