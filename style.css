@@ -2,6 +2,10 @@
   font-family: 'Lato', sans-serif;
 }
 
+header {
+  display: none;
+}
+
 /* HAMBURGER */
 .container_menu {
   display: block;
@@ -84,7 +88,7 @@
 
 /* HOME PAGE */
 .home {
-  background-image: url("./images/photo-1485627941502-d2e6429a8af0.avif");
+  background-image: url("/images/bible-study\ -\ Copy.jpg");
   overflow: hidden;
   margin: 0;
   background-repeat: no-repeat;
@@ -108,7 +112,7 @@
 .div-home {
   height: 100%;
   width: 100%;
-  background: #d2d2d21d;
+  background: #d2d2d2e8;
   padding: 20px 20px 50px 20px;
 }
 
@@ -122,7 +126,7 @@
 .description-title {
   font-size: 18px;
   color: #ec5242;
-  margin: 50px 0 4px 0;
+  margin: 60px 0 4px 0;
 }
 
 .about-title {
@@ -194,7 +198,6 @@
   background: #282b32cc;
   justify-content: center;
   flex-direction: column;
-  gap: 10px;
 }
 
 .about-program {
@@ -273,6 +276,7 @@ footer p {
   font-size: 40px;
   align-self: center;
   margin: 0;
+  cursor: pointer;
 }
 
 .program h3 {
@@ -281,12 +285,14 @@ footer p {
   font-weight: bold;
   align-self: center;
   margin: 0;
+  cursor: pointer;
 }
 
 .program p {
   color: white;
   font-size: small;
   margin: auto 0;
+  cursor: pointer;
 }
 
 .div-main-program button {
@@ -320,6 +326,7 @@ footer p {
   position: relative;
   padding: 0;
   border: none;
+  z-index: -1;
 }
 
 .past-2 {
@@ -327,6 +334,7 @@ footer p {
   padding: 0;
   border: none;
   margin-bottom: 50px;
+  z-index: -1;
 }
 
 .centered {
@@ -368,4 +376,189 @@ footer {
   align-items: center;
   gap: 20px;
   padding: 25px 40px;
+}
+
+.program-flex {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.see-whole-program {
+  display: none;
+}
+
+.program h3:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+.program i:hover {
+  color: #ec5242;
+}
+
+.program p:hover {
+  text-decoration: underline;
+}
+
+/* DESKTOP VERSION */
+@media (min-width: 768px) {
+  .container_menu,
+  .menu {
+    display: none;
+  }
+
+  .home {
+    background-image: url("/images/bible-study.jpg");
+  }
+
+  header {
+    display: block;
+    position: fixed;
+    width: 100%;
+  }
+
+  .div-home {
+    padding: 12% 10% 10% 10%;
+    width: 100%;
+  }
+
+  .div-about {
+    padding: 120px 20px 30px 20px;
+  }
+  
+  
+  .first-nav {
+    display: flex;
+    justify-content: flex-end;
+    background: #3e3e3e;
+    position: relative;
+    height: 30px;
+    width: 100%;
+    z-index: 3;
+  }
+
+  .icons {
+    display: flex;
+    margin-top: auto;
+    margin-bottom: auto;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 15px;
+    color: white;
+    margin-right: 10%;
+  }
+
+  .icons a {
+    color: white;
+    text-decoration: none;
+  }
+
+  .icons a:hover {
+    color: #ec5242;
+  }
+
+  .second-nav img {
+    height: 50px;
+  }
+
+  .second-nav ul {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  }
+
+ .second-nav ul li a {
+    color: black;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+  }
+
+  .second-nav {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    height: 60px;
+    width: 100%;
+    padding: 0 10%;
+  }
+
+  #home-link,
+  #about-link {
+    color: #ec5242;
+  }
+
+  .description-title {
+    font-size: 30px;
+    margin: 27px 0 27px 0;
+  }
+  
+  .main-title {
+    font-size: 4.4rem;
+    margin: 2% 0;
+  }
+
+  .home-content {
+    padding: 2%;
+    margin: 4% 48% 4% 0;
+  }
+
+  .div-main-program button {
+    opacity: 0;
+    margin: 0;
+  }
+
+  .program-flex {
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    width: 80%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 5px;
+  }
+
+  .program {
+    display: grid;
+    grid-template-rows: 1fr 1fr 2.5fr;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 5%;
+    padding: 30px 15px 0 15px;
+  }
+
+  .program p {
+    align-self: flex-start;
+    margin: 0;
+    padding: 0;
+  }
+
+  .date {
+    font-size: 2.5rem;
+  }
+
+  .see-whole-program {
+    display: block;
+    margin: 0 auto 60px auto;
+    color: white;
+  }
+
+  .see-whole-program:hover {
+    color:#ec5242;
+  }
 }
