@@ -45,7 +45,7 @@
   display: flex;
   position: fixed;
   align-items: flex-start;
-  padding: 35% 10%;
+  padding: 30% 10%;
   top: -5%;
   height: 110vh;
   width: 100%;
@@ -297,6 +297,7 @@ footer p {
   width: fit-content;
   margin: 35px auto 50px auto;
   cursor: pointer;
+  border: none;
 }
 
 .p-logo-2 {
