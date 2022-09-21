@@ -86,10 +86,6 @@ header {
   transition: 0.7s ease;
 }
 
-.menu ul li a:hover {
-  color: white;
-}
-
 /* HOME PAGE */
 .home {
   background-image: url("/images/bible-study\ -\ Copy.jpg");
@@ -133,7 +129,7 @@ header {
   margin: 60px 0 4px 0;
   animation-duration: 1.7s;
   animation-name: moveDown300px;
-  animation-direction:alternate-reverse;
+  animation-direction: alternate-reverse;
 }
 
 .about-title {
@@ -211,11 +207,6 @@ header {
 .div-main-program h2 {
   cursor: pointer;
 }
-
-.div-main-program h2:hover {
-  font-size: 32px;
-  transition: 0.3s ease-in-out;
-} 
 
 .about-program {
   padding: 0 20px 0 20px;
@@ -327,11 +318,6 @@ footer p {
   transition: all 0.2s ease-out;
 }
 
-.div-main-program button:hover {
-  background: #ff6655;
-  border-radius: 20px;
-}
-
 .p-logo-2 {
   text-align: center;
   margin: 0 auto 20px auto;
@@ -421,24 +407,6 @@ footer {
   display: none;
 }
 
-.program:hover {
-  border: 2px solid #ec5242;
-}
-
-.program h3:hover {
-  color: white;
-  text-decoration: underline;
-}
-
-.program i:hover {
-  color: #ec5242;
-  transform: rotate(90deg);
-}
-
-.program p:hover {
-  text-decoration: underline;
-}
-
 @keyframes moveDown300px {
   from {
     margin-bottom: 0%;
@@ -455,6 +423,38 @@ footer {
 
 #about-footer-logo {
   display: none;
+}
+
+.menu ul li a:hover {
+  color: white;
+}
+
+.div-main-program h2:hover {
+  font-size: 32px;
+  transition: 0.3s ease-in-out;
+}
+
+.div-main-program button:hover {
+  background: #f65;
+  border-radius: 20px;
+}
+
+.program:hover {
+  border: 2px solid #ec5242;
+}
+
+.program h3:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+.program i:hover {
+  color: #ec5242;
+  transform: rotate(90deg);
+}
+
+.program p:hover {
+  text-decoration: underline;
 }
 
 /* DESKTOP VERSION */
@@ -483,13 +483,11 @@ footer {
     padding: 13% 20% 5% 20%;
   }
 
-  
   .about-program {
     padding-left: 20%;
     padding-right: 20%;
   }
-  
-  
+
   .first-nav {
     display: flex;
     justify-content: flex-end;
@@ -516,10 +514,6 @@ footer {
     text-decoration: none;
   }
 
-  .icons a:hover {
-    color: #ec5242;
-  }
-
   .second-nav img {
     height: 50px;
   }
@@ -532,7 +526,7 @@ footer {
     margin: 0;
   }
 
- .second-nav ul li a {
+  .second-nav ul li a {
     color: black;
     margin: 0;
     padding: 0;
@@ -559,7 +553,7 @@ footer {
     font-size: 30px;
     margin: 27px 0 27px 0;
   }
-  
+
   .main-title {
     font-size: 4.4rem;
     margin: 2% 0;
@@ -615,12 +609,8 @@ footer {
     color: white;
   }
 
-  .see-whole-program:hover {
-    color:#ec5242;
-  }
-
   .about-title {
-    font-size: 50px;    
+    font-size: 50px;
   }
 
   .about-content {
@@ -635,7 +625,7 @@ footer {
   .past {
     margin: 0;
     display: flex;
-    justify-content: space-around;    
+    justify-content: space-around;
   }
 
   .centered {
@@ -666,5 +656,13 @@ footer {
 
   #about-footer-logo-mobile {
     display: none;
+  }
+
+  .icons a:hover {
+    color: #ec5242;
+  }
+
+  .see-whole-program:hover {
+    color: #ec5242;
   }
 }
