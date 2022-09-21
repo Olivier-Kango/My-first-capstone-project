@@ -86,6 +86,10 @@ header {
   transition: 0.7s ease;
 }
 
+.menu ul li a:hover {
+  color: white;
+}
+
 /* HOME PAGE */
 .home {
   background-image: url("/images/bible-study\ -\ Copy.jpg");
@@ -127,6 +131,9 @@ header {
   font-size: 18px;
   color: #ec5242;
   margin: 60px 0 4px 0;
+  animation-duration: 1.7s;
+  animation-name: moveDown300px;
+  animation-direction:alternate-reverse;
 }
 
 .about-title {
@@ -199,6 +206,15 @@ header {
   justify-content: center;
   flex-direction: column;
 }
+
+.div-main-program h2 {
+  cursor: pointer;
+}
+
+.div-main-program h2:hover {
+  font-size: 32px;
+  transition: 0.3s ease-in-out;
+} 
 
 .about-program {
   padding: 0 20px 0 20px;
@@ -277,6 +293,7 @@ footer p {
   align-self: center;
   margin: 0;
   cursor: pointer;
+  transition: all 0.2s ease-out;
 }
 
 .program h3 {
@@ -286,6 +303,7 @@ footer p {
   align-self: center;
   margin: 0;
   cursor: pointer;
+  transition: all 0.2s ease-out;
 }
 
 .program p {
@@ -293,6 +311,7 @@ footer p {
   font-size: small;
   margin: auto 0;
   cursor: pointer;
+  transition: all 0.2s ease-out;
 }
 
 .div-main-program button {
@@ -304,6 +323,12 @@ footer p {
   margin: 35px auto 50px auto;
   cursor: pointer;
   border: none;
+  transition: all 0.2s ease-out;
+}
+
+.div-main-program button:hover {
+  background: #ff6655;
+  border-radius: 20px;
 }
 
 .p-logo-2 {
@@ -393,6 +418,10 @@ footer {
   display: none;
 }
 
+.program:hover {
+  border: 2px solid #ec5242;
+}
+
 .program h3:hover {
   color: white;
   text-decoration: underline;
@@ -400,10 +429,25 @@ footer {
 
 .program i:hover {
   color: #ec5242;
+  transform: rotate(90deg);
 }
 
 .program p:hover {
   text-decoration: underline;
+}
+
+@keyframes moveDown300px {
+from {
+  margin-bottom: 0%;
+  margin-left: 0%;
+  width: 300%;
+}
+
+to {
+  margin-bottom: 100%;
+  margin-left: 100%;
+  width: 100%;
+}
 }
 
 /* DESKTOP VERSION */
