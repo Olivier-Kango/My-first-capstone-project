@@ -33,10 +33,14 @@ To run this app on your local computer you need the browser (Google Chrome is th
 - Install VSCode or any code editor you like
 - Install npm by running npm install
 
-### Screenshort of the Project
+### Screenshort for the Mobile version
+
+<img width="634" alt="home-about" src="https://user-images.githubusercontent.com/108806646/191325369-e5e45694-c277-410b-b1de-763b88ad3bd5.png">
 
 
-<img width="703" alt="Untitled" src="https://user-images.githubusercontent.com/108806646/191148093-a42f1d6f-03ab-4a58-9f5c-516813f37d9e.png">
+### Screenshort for the Desktop Version
+
+<img width="960" alt="Untitled" src="https://user-images.githubusercontent.com/108806646/191325160-5e0e98ad-7776-4d55-8387-64191caf5a97.png">
 
 
 ## Author

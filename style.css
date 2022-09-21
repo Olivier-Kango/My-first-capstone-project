@@ -457,6 +457,10 @@ footer {
   text-decoration: underline;
 }
 
+footer a {
+  display: contents;
+}
+
 /* DESKTOP VERSION */
 @media (min-width: 768px) {
   .container_menu,
@@ -650,7 +654,7 @@ footer {
   }
 
   #about-footer-p {
-    margin-top: 10px;
+    margin-top: 15px;
     color: white;
   }
 
@@ -664,5 +668,9 @@ footer {
 
   .see-whole-program:hover {
     color: #ec5242;
+  }
+
+ footer a {
+  display: contents;
   }
 }
