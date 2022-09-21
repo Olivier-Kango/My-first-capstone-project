@@ -1,0 +1,799 @@
+@import url('http://fonts.cdnfonts.com/css/cocogoose');
+
+* {
+  font-family: 'Lato', sans-serif;
+}
+
+header {
+  display: none;
+}
+
+/* Hamburger */
+.container_menu {
+  display: block;
+  cursor: pointer;
+  width: auto;
+  width: fit-content;
+}
+
+.change .container_menu {
+  position: fixed;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #616161c6;
+  margin: 6px 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+  color: white;
+}
+
+.change .bar2 {
+  opacity: 0;
+}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+  color: white;
+}
+
+.menu {
+  display: flex;
+  position: fixed;
+  align-items: flex-start;
+  padding: 30% 10%;
+  top: -5%;
+  height: 110vh;
+  width: 100%;
+  left: -120%;
+  transition: 0.3s;
+  background: #282b32;
+}
+
+.menu ul {
+  display: flex;
+  gap: 50px;
+  margin: 0;
+  padding: 0;
+  flex-direction: column;
+  align-items: flex-start;
+  z-index: 1;
+  transition: 0.3s;
+}
+
+.menu.change {
+  left: 0;
+}
+
+.nav-item:nth-child(n) {
+  font-weight: bold;
+  color: #ec5242;
+  list-style: none;
+}
+
+.nav-link {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+  transition: 0.7s ease;
+}
+
+/* Home Page */
+.home {
+  background-image: url("/images/bible-study\ -\ Copy.jpg");
+  overflow: hidden;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+  transition: 0.5s;
+  z-index: -2;
+}
+
+.about {
+  background-image: url("./images/photo-1481026469463-66327c86e544.avif");
+  overflow: hidden;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+  transition: 0.5s;
+  z-index: -2;
+}
+
+.div-home {
+  height: 100%;
+  width: 100%;
+  background: #d2d2d2e8;
+  padding: 20px 20px 50px 20px;
+}
+
+.div-about {
+  height: 100%;
+  width: 100%;
+  background: #ffffffb7;
+  padding: 20px 20px 30px 20px;
+}
+
+.description-title {
+  font-size: 18px;
+  color: #ec5242;
+  margin: 60px 0 4px 0;
+  animation-duration: 1.7s;
+  animation-name: moveDown300px;
+  animation-direction: alternate-reverse;
+}
+
+.about-title {
+  text-align: center;
+  font-size: 18px;
+  color: #ec5242;
+  padding-top: 15px;
+  margin: 27px 0 27px 0;
+}
+
+.main-title {
+  font-family: 'COCOGOOSE', sans-serif;
+  font-size: 1.9rem;
+  font-weight: bold;
+  color: #ec5242;
+  margin: 2% 0;
+}
+
+.home-content {
+  border: 4px solid white;
+  padding: 4%;
+  background: #eceff0af;
+  margin: 15px 0;
+}
+
+.about-content {
+  text-align: center;
+  border: 2px solid #c9c9ca56;
+  padding: 4%;
+  background: #fff;
+  margin: 20px 0;
+}
+
+.date {
+  font-family: 'COCOGOOSE', sans-serif;
+  font-size: 1.5rem;
+  margin: 4% 0;
+  color: #4b4b4b;
+}
+
+footer a {
+  display: contents;
+}
+
+.contact-us {
+  display: block;
+  margin: 0 auto;
+  width: 70%;
+  text-align: center;
+  font-size: small;
+}
+
+.contact-us a {
+  font-weight: bold;
+  color: black;
+}
+
+.main-program {
+  background-image: url("/images/black-brick-bd.jfif");
+  overflow: hidden;
+  display: flex;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+  transition: 0.5s;
+  z-index: -2;
+}
+
+.div-main-program {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background: #282b32cc;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.div-main-program h2 {
+  cursor: pointer;
+}
+
+.about-program {
+  padding: 0 20px 0 20px;
+  margin: 0;
+  z-index: -2;
+  border-bottom: 2px solid #61616121;
+}
+
+.main-program h2 {
+  padding-top: 30px;
+  text-align: center;
+  color: white;
+}
+
+.about-program h2 {
+  padding-top: 40px;
+  text-align: center;
+  color: black;
+  font-weight: bold;
+}
+
+.underline {
+  display: block;
+  margin: 15px auto 30px auto;
+  background: #ec5242;
+  width: 70px;
+  height: 3px;
+}
+
+.underline-one {
+  display: block;
+  margin: 20px auto 20px auto;
+  background: #ec5242;
+  width: 40px;
+  height: 2px;
+}
+
+footer img {
+  width: 40%;
+}
+
+footer p {
+  color: #414246;
+  font-size: small;
+}
+
+.about-program img {
+  display: block;
+  padding: 15px 50px;
+  margin: 40px auto;
+  width: 80%;
+  border: 2px solid #61616121;
+}
+
+.p-logo {
+  text-align: center;
+  margin: 0 auto;
+  width: 70%;
+}
+
+.program {
+  display: grid;
+  grid-template-columns: 12% 26% 50%;
+  align-content: center;
+  justify-content: center;
+  gap: 15px;
+  padding: 15px;
+  background: #eceff01a;
+  height: 90px;
+  margin: 0 auto;
+  width: 90%;
+}
+
+.program i {
+  color: white;
+  font-size: 40px;
+  align-self: center;
+  margin: 0;
+  cursor: pointer;
+  transition: all 0.2s ease-out;
+}
+
+.program h3 {
+  color: #ec5242;
+  font-size: 14px;
+  font-weight: bold;
+  align-self: center;
+  margin: 0;
+  cursor: pointer;
+  transition: all 0.2s ease-out;
+}
+
+.program p {
+  color: white;
+  font-size: small;
+  margin: auto 0;
+  cursor: pointer;
+  transition: all 0.2s ease-out;
+}
+
+.div-main-program button {
+  display: block;
+  color: white;
+  background: #ec5242;
+  padding: 20px 40px;
+  width: fit-content;
+  margin: 35px auto 50px auto;
+  cursor: pointer;
+  border: none;
+  transition: all 0.2s ease-out;
+}
+
+.div-main-program a {
+  text-decoration: none;
+}
+
+.p-logo-2 {
+  text-align: center;
+  margin: 0 auto 20px auto;
+  width: 85%;
+}
+
+#past-1-img {
+  padding: 0;
+  border: none;
+}
+
+#past-2-img {
+  padding: 0;
+  border: none;
+}
+
+.past-1 {
+  position: relative;
+  padding: 0;
+  border: none;
+  z-index: -1;
+}
+
+.past-2 {
+  position: relative;
+  padding: 0;
+  border: none;
+  margin-bottom: 50px;
+  z-index: -1;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.centered h2 {
+  color: white;
+  font-weight: bold;
+}
+
+.centered p {
+  color: white;
+  font-size: small;
+}
+
+.partner {
+  display: block;
+  background: #414246;
+}
+
+.partner h2 {
+  color: white;
+}
+
+.partner p {
+  margin: 30px;
+  color: #909090;
+  text-align: center;
+  font-family: 'COCOGOOSE', sans-serif;
+  font-weight: bold;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 25px 40px;
+  background: white;
+}
+
+.program-flex {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.see-whole-program {
+  display: none;
+}
+
+@keyframes moveDown300px {
+  from {
+    margin-bottom: 0%;
+    margin-left: 0%;
+    width: 300%;
+  }
+
+  to {
+    margin-bottom: 100%;
+    margin-left: 100%;
+    width: 100%;
+  }
+}
+
+#about-footer-logo {
+  display: none;
+}
+
+.contact-us a:hover {
+  color: #ec5242;
+}
+
+.menu ul li a:hover {
+  color: white;
+}
+
+.div-main-program h2:hover {
+  font-size: 32px;
+  transition: 0.3s ease-in-out;
+}
+
+.div-main-program button:hover {
+  background: #f65;
+  border-radius: 20px;
+}
+
+.program:hover {
+  border: 2px solid #ec5242;
+}
+
+.program h3:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+.program i:hover {
+  color: #ec5242;
+  transform: rotate(45deg);
+}
+
+.program p:hover {
+  text-decoration: underline;
+}
+
+/* Featured Speakers */
+.title-speakers {
+  padding-top: 30px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.div-speakers {
+  padding: 4% 4%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.featured-speaker {
+  display: flex;
+  flex-direction: row;
+}
+
+.square-background {
+  position: absolute;
+  z-index: -2;
+}
+
+.imageSpeaker {
+  position: relative;
+  margin: 20px 20px 0 20px;
+  width: 93px;
+  height: 93px;
+  background: red;
+  z-index: -1;
+}
+
+.div-content {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  justify-content: center;
+}
+
+.fname {
+  font-size: 14px;
+  font-weight: bold;
+  align-self: flex-start;
+  margin: 0;
+  padding: 0;
+}
+
+.profession {
+  font-size: 12px;
+  font-style: italic;
+  color: #ec5242;
+  padding: 0;
+  margin: 0;
+}
+
+.line {
+  background: #616161;
+  width: 40px;
+  height: 3px;
+}
+
+.aboutp {
+  font-size: 12px;
+  padding: 5px 0;
+}
+
+.partner-desk {
+  display: none;
+}
+
+#footer-home-page {
+  display: none;
+}
+
+/* DESKTOP VERSION */
+@media (min-width: 768px) {
+  .container_menu,
+  .menu {
+    display: none;
+  }
+
+  .home {
+    background-image: url("/images/bible-study.jpg");
+  }
+
+  header {
+    display: block;
+    position: fixed;
+    width: 100%;
+  }
+
+  .div-home {
+    padding: 12% 10% 10% 10%;
+    width: 100%;
+  }
+
+  .div-about {
+    padding: 13% 20% 5% 20%;
+  }
+
+  .about-program {
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+
+  .first-nav {
+    display: flex;
+    justify-content: flex-end;
+    background: #3e3e3e;
+    position: relative;
+    height: 30px;
+    width: 100%;
+    z-index: 3;
+  }
+
+  footer a {
+    display: contents;
+  }
+
+  .underline-one {
+    width: 70px;
+  }
+
+  .icons {
+    display: flex;
+    margin-top: auto;
+    margin-bottom: auto;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+    color: white;
+    margin-right: 10%;
+  }
+
+  .icons a {
+    color: white;
+    text-decoration: none;
+  }
+
+  .second-nav img {
+    height: 50px;
+  }
+
+  .second-nav ul {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  }
+
+  .second-nav ul li a {
+    color: black;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+  }
+
+  .second-nav {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    height: 60px;
+    width: 100%;
+    padding: 0 10%;
+  }
+
+  #home-link,
+  #about-link {
+    color: #ec5242;
+  }
+
+  .description-title {
+    font-size: 30px;
+    margin: 27px 0 27px 0;
+  }
+
+  .main-title {
+    font-size: 4.4rem;
+    margin: 2% 0;
+  }
+
+  .home-content {
+    padding: 2%;
+    margin: 4% 48% 4% 0;
+  }
+
+  .div-main-program button {
+    opacity: 0;
+    margin: 0;
+  }
+
+  .program-flex {
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    width: 80%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 5px;
+  }
+
+  .program {
+    display: grid;
+    grid-template-rows: 1fr 1fr 2.5fr;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 5%;
+    padding: 30px 15px 0 15px;
+  }
+
+  .program p {
+    align-self: flex-start;
+    margin: 0;
+    padding: 0;
+  }
+
+  .date {
+    font-size: 2.5rem;
+  }
+
+  .see-whole-program {
+    display: block;
+    margin: 0 auto 60px auto;
+    color: white;
+  }
+
+  .about-title {
+    font-size: 50px;
+  }
+
+  .about-content {
+    margin: 8% 0;
+  }
+
+  .last-program {
+    padding-left: 8%;
+    padding-right: 8%;
+  }
+
+  .past {
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .centered {
+    top: 38%;
+  }
+
+  .centered-2 {
+    top: 45%;
+  }
+
+  .partner {
+    display: none;
+  }
+
+  .partner-desk {
+    display: block;
+    background: #414246;
+  }
+
+  .partner-desk h2 {
+    color: white;
+  }
+
+  .partner-desk p {
+    margin: 30px;
+    color: #909090;
+    text-align: center;
+    font-family: 'COCOGOOSE', sans-serif;
+    font-weight: bold;
+  }
+
+  footer {
+    background: #282b32;
+  }
+
+  #about-footer-logo {
+    width: 20%;
+    display: block;
+  }
+
+  #about-footer-p {
+    margin-top: 15px;
+    color: white;
+  }
+
+  #about-footer-logo-mobile {
+    display: none;
+  }
+
+  .icons a:hover {
+    color: #ec5242;
+  }
+
+  .see-whole-program:hover {
+    color: #ec5242;
+  }
+
+  /* Feature-Speakers */
+  .div-speakers {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+
+  #footer-home-page {
+    display: flex;
+    background: white;
+  }
+
+  #footer-home-page p {
+    color: black;
+  }
+}
