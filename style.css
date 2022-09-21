@@ -450,7 +450,7 @@ footer {
 
 .program i:hover {
   color: #ec5242;
-  transform: rotate(90deg);
+  transform: rotate(45deg);
 }
 
 .program p:hover {
