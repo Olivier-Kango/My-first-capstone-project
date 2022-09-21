@@ -170,6 +170,10 @@ header {
   color: #616161;
 }
 
+footer a {
+  display: contents;
+}
+
 .contact-us {
   display: block;
   margin: 0 auto;
@@ -318,6 +322,10 @@ footer p {
   transition: all 0.2s ease-out;
 }
 
+.div-main-program a {
+  text-decoration: none;
+}
+
 .p-logo-2 {
   text-align: center;
   margin: 0 auto 20px auto;
@@ -457,10 +465,6 @@ footer {
   text-decoration: underline;
 }
 
-footer a {
-  display: contents;
-}
-
 /* DESKTOP VERSION */
 @media (min-width: 768px) {
   .container_menu,
@@ -500,6 +504,10 @@ footer a {
     height: 30px;
     width: 100%;
     z-index: 3;
+  }
+
+  footer a {
+    display: contents;
   }
 
   .icons {
@@ -668,9 +676,5 @@ footer a {
 
   .see-whole-program:hover {
     color: #ec5242;
-  }
-
- footer a {
-  display: contents;
   }
 }
