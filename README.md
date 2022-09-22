@@ -16,7 +16,7 @@ I used this [template](https://www.behance.net/gallery/29845175/CC-Global-Summit
 
 ## Live Demo
 
-[My First Capstone-Project](https://capstone-one.netlify.app/)
+[My First Capstone-Project](https://olivier-kango.github.io/My-first-capstone-project/)
 
 
 ### Prerequisites
