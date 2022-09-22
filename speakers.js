@@ -4,19 +4,19 @@ const speakerContent = [
     imageSpeaker: 'images/olivier.jpg',
     fName: 'Olivier Kango',
     profession: 'Kango is the Founder of K Bible Study',
-    about: 'Olivier Kango studied at Microverse. In 2022 he had the wonderful idea of ​​​​creating K. Bible Study'
+    about: 'Olivier Kango studied at Microverse. In 2022 he had the wonderful idea of ​​​​creating K. Bible Study',
   },
   {
     imageSpeaker: 'images/theo.jfif',
     fName: 'Theophile Kango',
     profession: 'Theophile Kango is the Co-founder of K Bible Study',
-    about: 'Theophile Kango also studied at Microverse.'
+    about: 'Theophile Kango also studied at Microverse.',
   },
   {
     imageSpeaker: 'images/olivier.jpg',
     fName: 'Olivier Kango',
     profession: 'Kango is the Founder of K Bible Study',
-    about: 'Olivier Kango studied at Microverse. In 2022 he had the wonderful idea of ​​​​creating K. Bible Study'
+    about: 'Olivier Kango studied at Microverse. In 2022 he had the wonderful idea of ​​​​creating K. Bible Study',
   },
   {
     imageSpeaker: 'images/theo.jfif',
@@ -31,7 +31,7 @@ const sectionSpeakers = document.querySelector('.speakers');
 
 const titleSpeakers = document.createElement('h2');
 titleSpeakers.textContent = 'Featured Speakers';
-titleSpeakers.setAttribute('class', 'title-speakers')
+titleSpeakers.setAttribute('class', 'title-speakers');
 sectionSpeakers.appendChild(titleSpeakers);
 
 const underline = document.createElement('div');
@@ -39,15 +39,15 @@ underline.setAttribute('class', 'underline');
 sectionSpeakers.appendChild(underline);
 
 const divSpeakers = document.createElement('div');
-divSpeakers.setAttribute('class', 'div-speakers')
+divSpeakers.setAttribute('class', 'div-speakers');
 sectionSpeakers.appendChild(divSpeakers);
 
-speakerContent.forEach(content => {
+speakerContent.forEach((content) => {
   const featuredSpeaker = document.createElement('div');
   featuredSpeaker.setAttribute('class', 'featured-speaker');
   divSpeakers.appendChild(featuredSpeaker);
 
-  const {imageSpeaker, fName, profession, about} = content;
+  const { imageSpeaker, fName, profession, about } = content;
 
   const divBackgroundAndImage = document.createElement('div');
   divBackgroundAndImage.innerHTML = '';
@@ -57,7 +57,7 @@ speakerContent.forEach(content => {
   const background = document.createElement('img');
   background.setAttribute('src', 'images/square.jpg');
   background.setAttribute('class', 'square-background');
-  background.setAttribute('alt', 'square_background')
+  background.setAttribute('alt', 'square_background');
   divBackgroundAndImage.appendChild(background);
 
   const imgSpeaker = document.createElement('img');

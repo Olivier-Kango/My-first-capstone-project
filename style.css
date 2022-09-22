@@ -159,7 +159,7 @@ header {
   text-align: center;
   border: 2px solid #c9c9ca56;
   padding: 4%;
-  background: #ffffff;
+  background: #fff;
   margin: 20px 0;
 }
 
@@ -434,6 +434,10 @@ footer {
   display: none;
 }
 
+.contact-us a:hover {
+  color: #ec5242;
+}
+
 .menu ul li a:hover {
   color: white;
 }
@@ -466,10 +470,6 @@ footer {
   text-decoration: underline;
 }
 
-.contact-us a:hover {
-  color: #ec5242;
-}
-
 /* Featured Speakers */
 .title-speakers {
   padding-top: 30px;
@@ -498,7 +498,7 @@ footer {
   position: relative;
   margin: 20px 20px 0 20px;
   width: 93px;
-  height: 93px; 
+  height: 93px;
   background: red;
   z-index: -1;
 }
@@ -513,7 +513,7 @@ footer {
 .fname {
   font-size: 14px;
   font-weight: bold;
-  align-self:flex-start;
+  align-self: flex-start;
   margin: 0;
   padding: 0;
 }
@@ -521,13 +521,13 @@ footer {
 .profession {
   font-size: 12px;
   font-style: italic;
-  color:#ec5242;
+  color: #ec5242;
   padding: 0;
   margin: 0;
 }
 
 .line {
-  background:#616161;
+  background: #616161;
   width: 40px;
   height: 3px;
 }
@@ -539,11 +539,11 @@ footer {
 
 .partner-desk {
   display: none;
- }
+}
 
- #footer-home-page {
+#footer-home-page {
   display: none;
- }
+}
 
 /* DESKTOP VERSION */
 @media (min-width: 768px) {
@@ -733,18 +733,18 @@ footer {
   }
 
   .partner {
-   display: none;
+    display: none;
   }
 
   .partner-desk {
     display: block;
     background: #414246;
-   }
+  }
 
-   .partner-desk h2 {
+  .partner-desk h2 {
     color: white;
   }
-  
+
   .partner-desk p {
     margin: 30px;
     color: #909090;
@@ -789,9 +789,9 @@ footer {
   #footer-home-page {
     display: flex;
     background: white;
-   }
+  }
 
-   #footer-home-page p {
+  #footer-home-page p {
     color: black;
-   }
+  }
 }
