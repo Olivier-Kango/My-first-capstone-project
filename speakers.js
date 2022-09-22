@@ -22,7 +22,7 @@ const speakerContent = [
     imageSpeaker: 'images/theo.jfif',
     fName: 'Theophile Kango',
     profession: 'Theophile Kango is the Co-founder of K Bible Study',
-    about: 'Theophile Kango also studied at Microverse.'
+    about: 'Theophile Kango also studied at Microverse.',
   },
 ];
 // Change data, only in the object.value above
@@ -47,7 +47,9 @@ speakerContent.forEach((content) => {
   featuredSpeaker.setAttribute('class', 'featured-speaker');
   divSpeakers.appendChild(featuredSpeaker);
 
-  const { imageSpeaker, fName, profession, about } = content;
+  const {
+    imageSpeaker, fName, profession, about,
+  } = content;
 
   const divBackgroundAndImage = document.createElement('div');
   divBackgroundAndImage.innerHTML = '';
@@ -69,7 +71,7 @@ speakerContent.forEach((content) => {
   const divContent = document.createElement('div');
   divContent.setAttribute('class', 'div-content');
   featuredSpeaker.appendChild(divContent);
-  
+
   const fNameh3 = document.createElement('h3');
   fNameh3.setAttribute('class', 'fname');
   fNameh3.innerText = fName;
