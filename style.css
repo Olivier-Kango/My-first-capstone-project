@@ -6,7 +6,7 @@ header {
   display: none;
 }
 
-/* HAMBURGER */
+/* Hamburger */
 .container_menu {
   display: block;
   cursor: pointer;
@@ -86,7 +86,7 @@ header {
   transition: 0.7s ease;
 }
 
-/* HOME PAGE */
+/* Home Page */
 .home {
   background-image: url("/images/bible-study\ -\ Copy.jpg");
   overflow: hidden;
@@ -157,17 +157,17 @@ header {
 
 .about-content {
   text-align: center;
-  border: 4px solid white;
+  border: 2px solid #c9c9ca56;
   padding: 4%;
-  background: #eceff0af;
+  background: #ffffff;
   margin: 20px 0;
 }
 
 .date {
+  font-family: 'COCOGOOSE', sans-serif;
   font-size: 1.5rem;
-  font-weight: 900;
   margin: 4% 0;
-  color: #616161;
+  color: #4b4b4b;
 }
 
 footer a {
@@ -229,6 +229,7 @@ footer a {
   padding-top: 40px;
   text-align: center;
   color: black;
+  font-weight: bold;
 }
 
 .underline {
@@ -243,8 +244,8 @@ footer a {
   display: block;
   margin: 20px auto 20px auto;
   background: #ec5242;
-  width: 70px;
-  height: 3px;
+  width: 40px;
+  height: 2px;
 }
 
 footer img {
@@ -465,6 +466,85 @@ footer {
   text-decoration: underline;
 }
 
+.contact-us a:hover {
+  color: #ec5242;
+}
+
+/* Featured Speakers */
+.title-speakers {
+  padding-top: 30px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.div-speakers {
+  padding: 4% 4%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.featured-speaker {
+  display: flex;
+  flex-direction: row;
+}
+
+.square-background {
+  position: absolute;
+  z-index: -2;
+}
+
+.imageSpeaker {
+  position: relative;
+  margin: 20px 20px 0 20px;
+  width: 93px;
+  height: 93px; 
+  background: red;
+  z-index: -1;
+}
+
+.div-content {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  justify-content: center;
+}
+
+.fname {
+  font-size: 14px;
+  font-weight: bold;
+  align-self:flex-start;
+  margin: 0;
+  padding: 0;
+}
+
+.profession {
+  font-size: 12px;
+  font-style: italic;
+  color:#ec5242;
+  padding: 0;
+  margin: 0;
+}
+
+.line {
+  background:#616161;
+  width: 40px;
+  height: 3px;
+}
+
+.aboutp {
+  font-size: 12px;
+  padding: 5px 0;
+}
+
+.partner-desk {
+  display: none;
+ }
+
+ #footer-home-page {
+  display: none;
+ }
+
 /* DESKTOP VERSION */
 @media (min-width: 768px) {
   .container_menu,
@@ -508,6 +588,10 @@ footer {
 
   footer a {
     display: contents;
+  }
+
+  .underline-one {
+    width: 70px;
   }
 
   .icons {
@@ -649,7 +733,24 @@ footer {
   }
 
   .partner {
-    display: none;
+   display: none;
+  }
+
+  .partner-desk {
+    display: block;
+    background: #414246;
+   }
+
+   .partner-desk h2 {
+    color: white;
+  }
+  
+  .partner-desk p {
+    margin: 30px;
+    color: #909090;
+    text-align: center;
+    font-family: 'COCOGOOSE', sans-serif;
+    font-weight: bold;
   }
 
   footer {
@@ -677,4 +778,20 @@ footer {
   .see-whole-program:hover {
     color: #ec5242;
   }
+
+  /* Feature-Speakers */
+  .div-speakers {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+
+  #footer-home-page {
+    display: flex;
+    background: white;
+   }
+
+   #footer-home-page p {
+    color: black;
+   }
 }
