@@ -62,10 +62,9 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
+- Thanks Microverse for the support and inspiration to do this.
+- This replica was originally designed by Cindy Shin in Behance. Checkout Cindy's design [Here](https://www.behance.net/gallery/29845175/CC-Global-Summit-2015)
 
 ## 📝 License
 
-This project is [CC licenced](https://creativecommons.org/licenses/by-nc/4.0/deed.fr).
+This project is [CC](https://creativecommons.org/licenses/by-nc/4.0/deed.fr) licenced.
